@@ -7,8 +7,13 @@
 
   <!-- GitHub (StatiXOS) -->
   <remote  name="statix"
-           revision="10"
+           revision="10-rebase"
            fetch="https://github.com/stx-staging/" />
+  
+  <!-- stx release source -->
+  <remote name="stx-release"
+          revision="10"
+          fetch="https://github.com/StatiXOS/" />
 
   <!-- GitLab -->
   <remote name="gitlab"
@@ -38,11 +43,11 @@
   <project path="development" name="android_development" remote="statix" />
 
   <!-- External -->
-  <project path="external/ant-wireless/antradio-library" name="android_external_ant-wireless_antradio-library" remote="statix" />
-  <project path="external/ant-wireless/ant_native" name="android_external_ant-wireless_ant_native" remote="statix" />
-  <project path="external/ant-wireless/ant_service" name="android_external_ant-wireless_ant_service" remote="statix" />
-  <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" remote="statix" />
-  <project path="external/libnfc-nxp" name="android_external_libnfc-nxp" remote="statix" />
+  <project path="external/ant-wireless/antradio-library" name="android_external_ant-wireless_antradio-library" remote="stx-release" />
+  <project path="external/ant-wireless/ant_native" name="android_external_ant-wireless_ant_native" remote="stx-release" />
+  <project path="external/ant-wireless/ant_service" name="android_external_ant-wireless_ant_service" remote="stx-release" />
+  <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" remote="stx-release" />
+  <project path="external/libnfc-nxp" name="android_external_libnfc-nxp" remote="stx-release" />
   <project path="external/tinycompress" name="android_external_tinycompress" remote="statix" />
 
   <!-- Framework -->
@@ -55,19 +60,19 @@
   <!-- Hardware -->
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="statix" />
   <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="statix" />
-  <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="statix" />
-  <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" remote="statix" />
-  <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="statix" />
+  <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="stx-release" />
+  <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" remote="stx-release" />
+  <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="stx-release" />
   <project path="hardware/interfaces" name="android_hardware_interfaces" remote="statix" />
-  <project path="hardware/statix/interfaces" name="android_hardware_statix_interfaces" remote="statix" />
+  <project path="hardware/statix/interfaces" name="android_hardware_statix_interfaces" remote="stx-release" />
 
   <!-- Manifest -->
-  <project path="manifest" name="android_manifest" remote="statix" />
+  <project path="manifest" name="android_manifest" remote="statix" revision="10" />
 
   <!-- Packages -->
   <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" remote="statix" />
   <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" remote="statix" />
-  <project path="packages/apps/CustomDoze" name="android_packages_apps_CustomDoze" remote="statix" />
+  <project path="packages/apps/CustomDoze" name="android_packages_apps_CustomDoze" remote="stx-release" />
   <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="statix" />
   <project path="packages/apps/DocumentsUI" name="android_packages_apps_DocumentsUI" remote="statix" />
   <project path="packages/apps/Gallery2" name="android_packages_apps_Gallery2" remote="statix" />
@@ -80,7 +85,7 @@
   <project path="packages/apps/WallpaperPicker2" name="android_packages_apps_WallpaperPicker2" remote="statix" />
 
   <!-- Providers -->
-  <project path="packages/providers/WeatherProvider" name="android_packages_providers_WeatherProvider" remote="statix" />
+  <project path="packages/providers/WeatherProvider" name="android_packages_providers_WeatherProvider" remote="stx-release" />
 
   <!-- Recovery -->
   <project path="bootable/recovery" name="android_bootable_recovery" remote="statix" />
@@ -95,8 +100,8 @@
   <project path="system/vold" name="android_system_vold" remote="statix" />
 
   <!-- Vendor -->
-  <project path="vendor/statix" name="android_vendor_statix" remote="statix"  />
-  <project path="vendor/support" name="android_vendor_support" remote="statix" />
+  <project path="vendor/statix" name="android_vendor_statix" remote="stx-release"  />
+  <project path="vendor/support" name="android_vendor_support" remote="stx-release" />
 
   <!-- EVERYTHING BELOW IS CAF -->
   <!-- CAF -->
@@ -110,14 +115,14 @@
   <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="statix" />
 
   <!-- Device -->
-  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="statix"  />
-  <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy" remote="statix" revision="10-legacy-um" />
-  <project path="device/statix/sepolicy" name="android_device_statix_sepolicy" remote="statix" />
+  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="stx-release"  />
+  <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy" remote="stx-release" revision="10-legacy-um" />
+  <project path="device/statix/sepolicy" name="android_device_statix_sepolicy" remote="stx-release" />
 
   <!-- Hardware -->
   <project path="hardware/ril" name="android_hardware_ril" remote="statix" />
   <project path="hardware/nxp/nfc" name="android_hardware_nxp_nfc" remote="statix" />
-  <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" remote="statix" >
+  <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" remote="stx-release" >
     <!-- Add guard for AOSP hardware/qcom directory. -->
     <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
     <!-- For AOSP SDM845/SM8150, we override os_pickup.mk. -->
@@ -133,26 +138,26 @@
     <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/sm8150/Android.bp" />
     <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8150/Android.mk" />
   </project>
-  <project path="hardware/qcom-caf/bootctrl" name="android_hardware_qcom_bootctrl" remote="statix" />
-  <project path="hardware/qcom-caf/bt" name="android_hardware_qcom_bt" remote="statix" revision="10-caf" />
-  <project path="hardware/qcom-caf/camera" name="android_hardware_qcom_camera" remote="statix" />
-  <project path="hardware/qcom-caf/keymaster" name="android_hardware_qcom_keymaster" remote="statix" />
-  <project path="hardware/qcom-caf/msm8996/audio" name="android_hardware_qcom_audio" revision="10-caf-8996" remote="statix" />
-  <project path="hardware/qcom-caf/msm8996/display" name="android_hardware_qcom_display" revision="10-caf-8996" remote="statix"  />
-  <project path="hardware/qcom-caf/msm8996/media" name="android_hardware_qcom_media" revision="10-caf-8996" remote="statix" />
-  <project path="hardware/qcom-caf/msm8998/audio" name="android_hardware_qcom_audio" revision="10-caf-8998" remote="statix" />
-  <project path="hardware/qcom-caf/msm8998/display" name="android_hardware_qcom_display" revision="10-caf-8998" remote="statix"  />
-  <project path="hardware/qcom-caf/msm8998/media" name="android_hardware_qcom_media" revision="10-caf-8998" remote="statix" />
-  <project path="hardware/qcom-caf/sdm845/audio" name="android_hardware_qcom_audio" revision="10-caf-sdm845" remote="statix" />
-  <project path="hardware/qcom-caf/sdm845/display" name="android_hardware_qcom_display" revision="10-caf-sdm845" remote="statix"  />
-  <project path="hardware/qcom-caf/sdm845/media" name="android_hardware_qcom_media" revision="10-caf-sdm845" remote="statix" />
-  <project path="hardware/qcom-caf/sm8150/audio" name="android_hardware_qcom_audio" revision="10-caf-sm8150" remote="statix" />
-  <project path="hardware/qcom-caf/sm8150/display" name="android_hardware_qcom_display" revision="10-caf-sm8150" remote="statix"  />
-  <project path="hardware/qcom-caf/sm8150/media" name="android_hardware_qcom_media" revision="10-caf-sm8150" remote="statix" />
-  <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" remote="statix" />
+  <project path="hardware/qcom-caf/bootctrl" name="android_hardware_qcom_bootctrl" remote="stx-release" />
+  <project path="hardware/qcom-caf/bt" name="android_hardware_qcom_bt" remote="stx-release" revision="10-caf" />
+  <project path="hardware/qcom-caf/camera" name="android_hardware_qcom_camera" remote="stx-release" />
+  <project path="hardware/qcom-caf/keymaster" name="android_hardware_qcom_keymaster" remote="stx-release" />
+  <project path="hardware/qcom-caf/msm8996/audio" name="android_hardware_qcom_audio" revision="10-caf-8996" remote="stx-release" />
+  <project path="hardware/qcom-caf/msm8996/display" name="android_hardware_qcom_display" revision="10-caf-8996" remote="stx-release"  />
+  <project path="hardware/qcom-caf/msm8996/media" name="android_hardware_qcom_media" revision="10-caf-8996" remote="stx-release" />
+  <project path="hardware/qcom-caf/msm8998/audio" name="android_hardware_qcom_audio" revision="10-caf-8998" remote="stx-release" />
+  <project path="hardware/qcom-caf/msm8998/display" name="android_hardware_qcom_display" revision="10-caf-8998" remote="stx-release"  />
+  <project path="hardware/qcom-caf/msm8998/media" name="android_hardware_qcom_media" revision="10-caf-8998" remote="stx-release" />
+  <project path="hardware/qcom-caf/sdm845/audio" name="android_hardware_qcom_audio" revision="10-caf-sdm845" remote="stx-release" />
+  <project path="hardware/qcom-caf/sdm845/display" name="android_hardware_qcom_display" revision="10-caf-sdm845" remote="stx-release"  />
+  <project path="hardware/qcom-caf/sdm845/media" name="android_hardware_qcom_media" revision="10-caf-sdm845" remote="stx-release" />
+  <project path="hardware/qcom-caf/sm8150/audio" name="android_hardware_qcom_audio" revision="10-caf-sm8150" remote="stx-release" />
+  <project path="hardware/qcom-caf/sm8150/display" name="android_hardware_qcom_display" revision="10-caf-sm8150" remote="stx-release"  />
+  <project path="hardware/qcom-caf/sm8150/media" name="android_hardware_qcom_media" revision="10-caf-sm8150" remote="stx-release" />
+  <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" remote="stx-release" />
 
   <!-- External -->
-  <project path="external/json-c" name="android_external_json-c" remote="statix" />
+  <project path="external/json-c" name="android_external_json-c" remote="stx-release" />
   <project path="external/selinux" name="android_external_selinux" remote="statix" />
 
   <!-- Framework -->
@@ -161,21 +166,21 @@
   <!-- System -->
   <project path="system/bt" name="android_system_bt" remote="statix" />
   <project path="system/core" name="android_system_core" remote="statix" />
-  <project path="system/qcom" name="android_system_qcom" remote="statix" />
+  <project path="system/qcom" name="android_system_qcom" remote="stx-release" />
 
   <!-- Vendor -->
-  <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="statix" />
+  <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="stx-release" />
   <project path="vendor/nxp/opensource/interfaces/nfc" name="platform/vendor/nxp/interfaces/opensource/nfc" remote="caf" />
   <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="platform/vendor/nxp/opensource/external/libnfc-nci" remote="caf" />
   <project path="vendor/nxp/opensource/commonsys/frameworks" name="platform/vendor/nxp/opensource/frameworks" remote="caf" />
-  <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="android_vendor_nxp_opensource_packages_apps_Nfc" remote="caf" />
+  <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="android_vendor_nxp_opensource_packages_apps_Nfc" remote="stx-release" />
   <project path="vendor/nxp/opensource/halimpl" name="platform/vendor/nxp/opensource/halimpl" remote="caf" revision="refs/tags/LA.UM.8.3.r1-07300-sdm845.0" />
   <project path="vendor/nxp/opensource/hidlimpl" name="platform/vendor/nxp/opensource/hidlimpl" remote="caf" revision="refs/tags/LA.UM.8.3.r1-07300-sdm845.0" />
   <project path="vendor/qcom/opensource/audio" name="platform/vendor/qcom-opensource/audio" remote="caf" />
-  <project path="vendor/qcom/opensource/cryptfs_hw" name="android_vendor_qcom_opensource_cryptfs_hw" remote="statix" />
-  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="statix" />
-  <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="statix" />
-  <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom_opensource_interfaces" remote="statix" />
-  <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="statix" />
+  <project path="vendor/qcom/opensource/cryptfs_hw" name="android_vendor_qcom_opensource_cryptfs_hw" remote="stx-release" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="stx-release" />
+  <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="stx-release" />
+  <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom_opensource_interfaces" remote="stx-release" />
+  <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="stx-release" />
 
 </manifest>
