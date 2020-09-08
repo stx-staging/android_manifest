@@ -12,7 +12,7 @@
            fetch="https://github.com/stx-staging" />
 
   <!-- Manifest -->
-  <project path="manifest" name="android_manifest" remote="statix" />
+  <project path="manifest" name="android_manifest" remote="staging" />
 
   <!-- CAF -->
 
