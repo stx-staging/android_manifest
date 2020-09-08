@@ -826,4 +826,6 @@
 
   <!-- StatiXOS -->
   <include name="remove.xml" />
+  <include name="include.xml" />
+
 </manifest>
