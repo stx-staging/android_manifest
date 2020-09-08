@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <!-- GitHub (StatiXOS) -->
+  <remote  name="statix"
+           revision="10"
+           fetch="https://github.com/StatiXOS/" />
+
+  <!-- GitHub (StatiXOS) -->
+  <remote  name="staging"
+           revision="11"
+           fetch="https://github.com/stx-staging" />
+
+
 </manifest>
