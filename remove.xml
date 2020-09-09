@@ -71,6 +71,7 @@
   <remove-project name="platform/external/google-fonts/lato" />
   <remove-project name="platform/external/google-fonts/rubik" />
   <remove-project name="platform/external/google-fonts/zilla-slab" />
+  <remove-project name="platform/external/selinux" />
 
   <!-- Prebuilts -->
   <remove-project name="kernel/prebuilts/4.19/arm64" />
@@ -83,5 +84,8 @@
   <remove-project name="platform/prebuilts/gdb/darwin-x86" />
   <remove-project name="platform/prebuilts/go/darwin-x86" />
   <remove-project name="platform/prebuilts/python/darwin-x86/2.7.5" />
+
+  <!-- System -->
+  <remove-project name="platform/system/core" />
 
 </manifest>
