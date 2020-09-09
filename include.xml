@@ -30,6 +30,9 @@
   <!-- Manifest -->
   <project path="manifest" name="android_manifest" remote="staging" />
 
+  <!-- Vendor -->
+  <project path="vendor/statix" name="android_vendor_statix" remote="staging"  />
+
   <!-- CAF -->
 
   <!-- Device -->
