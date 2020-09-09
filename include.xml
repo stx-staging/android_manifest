@@ -33,6 +33,9 @@
   <!-- Manifest -->
   <project path="manifest" name="android_manifest" remote="staging" />
 
+  <!-- Prebuilts -->
+  <project path="prebuilts/abi-dumps/vndk" name="android_prebuilts_abi-dumps_vndk" remote="staging" />
+
   <!-- System -->
   <project path="system/core" name="android_system_core" remote="staging" />
 
