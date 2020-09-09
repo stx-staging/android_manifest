@@ -35,6 +35,10 @@
 
   <!-- CAF -->
 
+  <remote name="caf"
+          fetch="https://source.codeaurora.org/quic/la"
+          revision="refs/tags/LA.UM.8.12.r1-13900-sm8250.0" />
+
   <!-- Device -->
   <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="statix"  />
   <project path="device/qcom/sepolicy-legacy" name="android_device_qcom_sepolicy" remote="statix" revision="10-legacy" />
@@ -75,5 +79,15 @@
   <project path="hardware/qcom-caf/sm8150/display" name="android_hardware_qcom_display" revision="10-caf-sm8150" remote="statix"  />
   <project path="hardware/qcom-caf/sm8150/media" name="android_hardware_qcom_media" revision="10-caf-sm8150" remote="statix" />
   <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" remote="statix" />
+
+  <!-- Vendor -->
+  <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="statix" />
+  <project path="vendor/qcom/opensource/audio" name="platform/vendor/qcom-opensource/audio" remote="caf" />
+  <project path="vendor/qcom/opensource/cryptfs_hw" name="android_vendor_qcom_opensource_cryptfs_hw" remote="statix" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="statix" />
+  <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="statix" />
+  <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom_opensource_interfaces" remote="statix" />
+  <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="statix" />
+  <project path="vendor/qcom/opensource/vibrator" name="platform/vendor/qcom-opensource/vibrator" remote="caf" />
 
 </manifest>
