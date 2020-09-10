@@ -75,6 +75,7 @@
   <remove-project name="platform/external/google-fonts/rubik" />
   <remove-project name="platform/external/google-fonts/zilla-slab" />
   <remove-project name="platform/external/selinux" />
+  <remove-project name="platform/external/tinycompress" />
 
   <!-- Prebuilts -->
   <remove-project name="kernel/prebuilts/4.19/arm64" />
