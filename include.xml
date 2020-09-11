@@ -11,6 +11,9 @@
            revision="11"
            fetch="https://github.com/stx-staging" />
 
+  <!--Bionic-->
+  <project path="bionic" name="android_bionic" remote="staging" />
+
   <!-- Build -->
 
   <project path="build/make" name="android_build" remote="staging" groups="pdk" >
