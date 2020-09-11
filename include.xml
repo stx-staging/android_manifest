@@ -34,6 +34,9 @@
   <project path="external/selinux" name="android_external_selinux" remote="staging" />
   <project path="external/tinycompress" name="android_external_tinycompress" remote="staging" />  
 
+  <!-- Frameworks -->
+  <project path="frameworks/base" name="android_frameworks_base" remote="staging" />
+
   <!-- Manifest -->
   <project path="manifest" name="android_manifest" remote="staging" />
 

@@ -81,6 +81,9 @@
   <remove-project name="platform/external/selinux" />
   <remove-project name="platform/external/tinycompress" />
 
+  <!-- Frameworks -->
+  <remove-project name="platform/frameworks/base" />
+
   <!-- Prebuilts -->
   <remove-project name="kernel/prebuilts/4.19/arm64" />
   <remove-project name="platform/prebuilts/abi-dumps/vndk" />
