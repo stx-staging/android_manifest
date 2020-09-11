@@ -66,6 +66,7 @@
 
   <!-- Hardware -->
   <remove-project name="platform/hardware/libhardware" />
+  <remove-project name="platform/hardware/qcom/media" />
 
   <!-- External -->
   <remove-project name="platform/external/google-fonts/arbutus-slab" />
