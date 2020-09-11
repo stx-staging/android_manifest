@@ -64,6 +64,9 @@
   <project path="device/qcom/sepolicy-legacy" name="android_device_qcom_sepolicy" remote="statix" revision="10-legacy" />
   <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy" remote="staging" revision="11-legacy-um" />
 
+  <!-- External -->
+  <project path="external/json-c" name="android_external_json-c" remote="statix" />
+
   <!-- Hardware -->
   <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" remote="staging" >
     <!-- Add guard for AOSP hardware/qcom directory. -->
