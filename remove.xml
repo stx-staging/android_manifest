@@ -84,6 +84,9 @@
   <!-- Frameworks -->
   <remove-project name="platform/frameworks/base" />
 
+  <!-- Packages -->
+  <remove-project name="platform/packages/apps/Settings" />
+
   <!-- Prebuilts -->
   <remove-project name="kernel/prebuilts/4.19/arm64" />
   <remove-project name="platform/prebuilts/abi-dumps/vndk" />
