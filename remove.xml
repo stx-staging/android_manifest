@@ -72,6 +72,8 @@
 
   <!-- Hardware -->
   <remove-project name="platform/hardware/libhardware" />
+  <remove-project name="platform/hardware/qcom/display" />
+  <remove-project name="platform/hardware/qcom/gps" />
   <remove-project name="platform/hardware/qcom/media" />
 
   <!-- External -->
