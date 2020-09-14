@@ -11,6 +11,9 @@
            revision="11"
            fetch="https://github.com/stx-staging" />
 
+  <!--ART-->
+  <project path="art" name="android_art" remote="staging" />
+
   <!--Bionic-->
   <project path="bionic" name="android_bionic" remote="staging" />
 
