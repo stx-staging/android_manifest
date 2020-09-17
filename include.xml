@@ -119,7 +119,7 @@
   <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="staging" />
   <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="staging" />
   <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom_opensource_interfaces" remote="statix" />
-  <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="statix" />
+  <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="staging" />
   <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" remote="staging" />
 
 </manifest>
