@@ -90,6 +90,7 @@
   <remove-project name="platform/frameworks/base" />
 
   <!-- Packages -->
+  <remove-project name="platform/packages/apps/QuickSearchBox" />
   <remove-project name="platform/packages/apps/Settings" />
 
   <!-- Prebuilts -->
