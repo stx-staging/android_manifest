@@ -75,6 +75,9 @@
   <!-- External -->
   <project path="external/json-c" name="android_external_json-c" remote="statix" />
 
+  <!-- Frameworks -->
+  <project path="frameworks/av" name="android_frameworks_av" remote="staging" />
+
   <!-- Hardware -->
   <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" remote="staging" >
     <!-- Add guard for AOSP hardware/qcom directory. -->
