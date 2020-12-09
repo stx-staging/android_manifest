@@ -23,15 +23,20 @@
   <remote name="caf"
           fetch="https://source.codeaurora.org/quic/la"
           revision="refs/tags/LA.UM.9.1.r1-06700-SMxxx0.0" />
+  
+  <!-- GitHub (StatiXOS) -->
+  <remote  name="staging"
+           revision="11_r20"
+           fetch="https://github.com/stx-staging" />
 
   <!--ART-->
-  <project path="art" name="android_art" remote="statix" />
+  <project path="art" name="android_art" remote="staging" />
 
   <!--Bionic-->
-  <project path="bionic" name="android_bionic" remote="statix" />
+  <project path="bionic" name="android_bionic" remote="staging" />
 
   <!-- Build -->
-  <project path="build/make" name="android_build" remote="statix" groups="pdk" >
+  <project path="build/make" name="android_build" remote="staging" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -40,29 +45,29 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  <project path="build/soong" name="android_build_soong" remote="statix" groups="pdk,tradefed" >
+  <project path="build/soong" name="android_build_soong" remote="staging" groups="pdk,tradefed" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
   <!-- Development -->
-  <project path="development" name="android_development" remote="statix" />
+  <project path="development" name="android_development" remote="staging" />
 
   <!-- Device -->
   <project path="device/statix/sepolicy" name="android_device_statix_sepolicy" remote="statix" />
 
   <!-- External -->
   <project path="external/libnfc-nxp" name="android_external_libnfc-nxp" remote="statix" />
-  <project path="external/selinux" name="android_external_selinux" remote="statix" />
+  <project path="external/selinux" name="android_external_selinux" remote="staging" />
   <project path="external/tinycompress" name="android_external_tinycompress" remote="statix" />  
 
   <!-- Frameworks -->
-  <project path="frameworks/base" name="android_frameworks_base" remote="statix" />
-  <project path="frameworks/native" name="android_frameworks_native" remote="statix" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="staging" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="staging" />
 
   <!-- Hardware -->
-  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="statix" />
-  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="statix" />
+  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="staging" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="staging" />
   <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="statix" />
   <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" remote="statix" />
   <project path="hardware/qcom/keymaster" name="android_hardware_qcom_keymaster" remote="statix" />
@@ -73,28 +78,28 @@
   <project path="manifest" name="android_manifest" remote="statix" />
 
   <!-- Packages -->
-  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="statix" />
+  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="staging" />
   <project path="packages/apps/LocalUpdater" name="android_packages_apps_LocalUpdater" remote="statix" />
-  <project path="packages/apps/PhoneCommon" name="android_packages_apps_PhoneCommon" remote="statix" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="statix" />
-  <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="statix" />
-  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="statix" />
-  <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="statix" />
-  <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="statix" />
-  <project path="packages/apps/WallpaperPicker2" name="android_packages_apps_WallpaperPicker2" remote="statix" />
+  <project path="packages/apps/PhoneCommon" name="android_packages_apps_PhoneCommon" remote="staging" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="staging" />
+  <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="staging" />
+  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="staging" />
+  <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="staging" />
+  <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="staging" />
+  <project path="packages/apps/WallpaperPicker2" name="android_packages_apps_WallpaperPicker2" remote="staging" />
   <project path="packages/apps/StatiXOSWalls" name="android_packages_apps_StatiXOSWalls" remote="statix" />
 
   <!-- Prebuilts -->
-  <project path="prebuilts/abi-dumps/vndk" name="android_prebuilts_abi-dumps_vndk" remote="statix" />
+  <project path="prebuilts/abi-dumps/vndk" name="android_prebuilts_abi-dumps_vndk" remote="staging" />
 
   <!-- Recovery -->
-  <project path="bootable/recovery" name="android_bootable_recovery" remote="statix" />
+  <project path="bootable/recovery" name="android_bootable_recovery" remote="staging" />
 
   <!-- System -->
-  <project path="system/bt" name="android_system_bt" remote="statix" />
-  <project path="system/core" name="android_system_core" remote="statix" />
-  <project path="system/sepolicy" name="android_system_sepolicy" remote="statix" />
-  <project path="system/update_engine" name="android_system_update_engine" remote="statix" />
+  <project path="system/bt" name="android_system_bt" remote="staging" />
+  <project path="system/core" name="android_system_core" remote="staging" />
+  <project path="system/sepolicy" name="android_system_sepolicy" remote="staging" />
+  <project path="system/update_engine" name="android_system_update_engine" remote="staging" />
   <project path="system/vold" name="android_system_vold" remote="statix" />
 
   <!-- Vendor -->
@@ -117,12 +122,12 @@
   <project path="external/json-c" name="android_external_json-c" remote="statix" />
 
   <!-- Frameworks -->
-  <project path="frameworks/av" name="android_frameworks_av" remote="statix" />
-  <project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" remote="statix" />
-  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="statix" />
+  <project path="frameworks/av" name="android_frameworks_av" remote="staging" />
+  <project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" remote="staging" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="staging" />
 
   <!-- Hardware -->
-  <project path="hardware/nxp/nfc" name="android_hardware_nxp_nfc" remote="statix" />
+  <project path="hardware/nxp/nfc" name="android_hardware_nxp_nfc" remote="staging" />
   <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" remote="statix" >
     <!-- Add guard for AOSP hardware/qcom directory. -->
     <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
