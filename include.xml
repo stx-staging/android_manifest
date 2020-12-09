@@ -62,7 +62,7 @@
   <project path="external/tinycompress" name="android_external_tinycompress" remote="statix" />  
 
   <!-- Frameworks -->
-  <project path="frameworks/base" name="android_frameworks_base" remote="staging" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="staging" revision="11_r20-rebase" />
   <project path="frameworks/native" name="android_frameworks_native" remote="staging" />
 
   <!-- Hardware -->
