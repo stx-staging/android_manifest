@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <!-- GitHub (StatiXOS) -->
+  <remote  name="staging"
+           revision="11_r38"
+           fetch="https://github.com/stx-staging" />
+
   <!-- Github -->
   <remote  name="github"
            fetch=".." />
@@ -31,7 +36,7 @@
   <project path="bionic" name="android_bionic" remote="statix" />
 
   <!-- Build -->
-  <project path="build/make" name="android_build" remote="statix" groups="pdk" >
+  <project path="build/make" name="android_build" remote="staging" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -64,8 +69,8 @@
   <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="statix" />
 
   <!-- Frameworks -->
-  <project path="frameworks/av" name="android_frameworks_av" remote="statix" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="statix" />
+  <project path="frameworks/av" name="android_frameworks_av" remote="staging" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="staging" />
   <project path="frameworks/native" name="android_frameworks_native" remote="statix" />
   <project path="frameworks/libs/native_bridge_support" name="android_frameworks_libs_native_bridge_support" remote="statix" />
   <project path="frameworks/libs/systemui" name="android_frameworks_libs_systemui" remote="statix" />
@@ -85,7 +90,7 @@
   <project path="hardware/statix/interfaces" name="android_hardware_statix_interfaces" remote="statix" />
 
   <!-- Manifest -->
-  <project path="manifest" name="android_manifest" remote="statix" />
+  <project path="manifest" name="android_manifest" remote="staging" />
 
   <!-- Packages -->
   <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" remote="statix" />
@@ -113,7 +118,7 @@
   <project path="system/core" name="android_system_core" remote="statix" />
   <project path="system/linkerconfig" name="android_system_linkerconfig" remote="statix" />
   <project path="system/security" name="android_system_security" remote="statix" />
-  <project path="system/sepolicy" name="android_system_sepolicy" remote="statix" />
+  <project path="system/sepolicy" name="android_system_sepolicy" remote="staging" />
   <project path="system/tools/hidl" name="android_system_tools_hidl" remote="statix" />
   <project path="system/update_engine" name="android_system_update_engine" remote="statix" />
   <project path="system/vold" name="android_system_vold" remote="statix" />
