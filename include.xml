@@ -110,7 +110,7 @@
   <project path="system/sepolicy" name="android_system_sepolicy" remote="statix-staging" />
 
   <!-- Tools -->
-  <project path="tools/extract-utils" name="android_tools_extract-utils" remote="statix" revision="tm" />
+  <project path="tools/extract-utils" name="android_tools_extract-utils" remote="statix" revision="udc-qpr2" />
 
   <!-- Vendor -->
   <project path="vendor/google/interfaces" name="android_vendor_google_interfaces" remote="statix" />
