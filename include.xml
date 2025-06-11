@@ -12,7 +12,7 @@
 
   <!-- GitHub (STX-Staging) -->
   <remote  name="statix-staging"
-           revision="vic-qpr2"
+           revision="bp2a"
            fetch="https://github.com/stx-staging/" />
 
   <!-- GitLab -->
@@ -63,7 +63,7 @@
   <project path="frameworks/native" name="android_frameworks_native" remote="statix-staging" />
 
   <!-- Google Mobile Services -->
-  <project path="vendor/gms" name="StatiXOS/google-mobile-services" remote="gitea" revision="vic-qpr2" clone-depth="1" />
+  <project path="vendor/gms" name="StatiXOS/google-mobile-services" remote="gitea" revision="bp2a" clone-depth="1" />
 
   <!-- Hardware -->
   <project path="hardware/interfaces" name="android_hardware_interfaces" remote="statix-staging" />
