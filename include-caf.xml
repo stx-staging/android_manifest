@@ -26,7 +26,7 @@
   <project path="external/json-c" name="android_external_json-c" remote="statix" revision="vic" />
 
   <!-- Hardware -->
-  <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" remote="statix" revision="vic" >
+  <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" remote="statix-staging" revision="bak" >
     <!-- Add guard for AOSP hardware/qcom directory. -->
     <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
     <!-- Add guards for CAF repositories. -->
