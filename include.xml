@@ -48,7 +48,7 @@
   <project path="device/manifests" name="android_device_manifests" remote="statix">
     <linkfile src="build.sh" dest="build.sh" />
   </project>
-  <project path="device/statix/sepolicy" name="android_device_statix_sepolicy" remote="statix" />
+  <project path="device/statix/sepolicy" name="android_device_statix_sepolicy" remote="statix" revision="bak" />
 
   <!-- External -->
   <project path="external/gptfdisk" name="android_external_gptfdisk" remote="statix-staging" />
@@ -104,6 +104,7 @@
   <!-- System -->
   <project path="system/core" name="android_system_core" remote="statix-staging" />
   <project path="system/libhidl" name="android_system_libhidl" remote="statix-staging" />
+  <project path="system/media" name="android_system_media" remote="statix-staging" />
   <project path="system/sepolicy" name="android_system_sepolicy" remote="statix-staging" />
 
   <!-- Tools -->
