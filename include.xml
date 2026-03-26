@@ -7,7 +7,7 @@
 
   <!-- GitHub (StatiXOS) -->
   <remote  name="statix"
-           revision="bp2a"
+           revision="bp4a"
            fetch="https://github.com/StatiXOS/" />
 
   <!-- GitHub (STX-Staging) -->
@@ -78,7 +78,7 @@
 
   <!-- Packages -->
   <project path="packages/apps/Aperture" name="LineageOS/android_packages_apps_Aperture" remote="github" revision="lineage-23.0" />
-  <project path="packages/apps/BtHelper" name="android_packages_apps_BtHelper" remote="statix" revision="bp4a" />
+  <project path="packages/apps/BtHelper" name="android_packages_apps_BtHelper" remote="statix" />
   <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="statix-staging" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="statix-staging" />
   <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="statix-staging" />
