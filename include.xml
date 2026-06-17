@@ -103,6 +103,7 @@
 
   <!-- System -->
   <project path="system/core" name="android_system_core" remote="statix-staging" />
+  <project path="system/fs/fs_mgr" name="android_system_fs_fs_mgr" remote="statix-staging" />
   <project path="system/libhidl" name="android_system_libhidl" remote="statix-staging" />
   <project path="system/media" name="android_system_media" remote="statix-staging" />
   <project path="system/sepolicy" name="android_system_sepolicy" remote="statix-staging" />
