@@ -18,7 +18,6 @@
   <remove-project name="device/generic/arm64" />
   <remove-project name="device/generic/armv7-a-neon" />
   <remove-project name="device/generic/art" />
-  <remove-project name="device/generic/car" />
   <remove-project name="device/generic/trusty" />
   <remove-project name="device/generic/x86" />
   <remove-project name="device/generic/x86_64" />
