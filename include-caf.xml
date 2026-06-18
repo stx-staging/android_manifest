@@ -72,7 +72,7 @@
   <project path="hardware/qcom-caf/sm8450/media" name="android_hardware_qcom_media" revision="tm-caf-sm8450" remote="statix" />
   <project path="hardware/qcom-caf/thermal" name="android_hardware_qcom_thermal" revision="bak-caf" remote="statix" />
   <project path="hardware/qcom-caf/thermal-legacy-um" name="android_hardware_qcom_thermal" revision="bak-caf-legacy-um" remote="statix" />
-  <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" remote="statix" revision="bak-caf" />
+  <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" remote="statix-staging" revision="cb-caf" />
 
   <!-- Vendor -->
   <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="statix" revision="vic"/>
