@@ -75,6 +75,9 @@
   <project path="hardware/statix/compat" name="android_hardware_statix_compat" remote="statix-staging" />
   <project path="hardware/statix/interfaces" name="android_hardware_statix_interfaces" remote="statix" />
 
+  <!-- Kernel -->
+  <project path="kernel/configs" name="android_kernel_configs" remote="statix-staging" />
+
   <!-- Manifest -->
   <project path="manifest" name="android_manifest" remote="statix-staging" />
 

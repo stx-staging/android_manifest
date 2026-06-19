@@ -46,6 +46,9 @@
   <remove-project name="platform/hardware/nxp/nfc" />
   <remove-project name="platform/hardware/qcom/wlan" />
 
+  <!-- Kernel -->
+  <remove-project name="kernel/configs" />
+
   <!-- Packages -->
   <remove-project name="platform/packages/apps/Browser2" />
   <remove-project name="platform/packages/apps/Calendar" />
