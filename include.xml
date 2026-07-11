@@ -48,7 +48,7 @@
   <project path="device/manifests" name="android_device_manifests" remote="statix">
     <linkfile src="build.sh" dest="build.sh" />
   </project>
-  <project path="device/statix/sepolicy" name="android_device_statix_sepolicy" remote="statix" revision="bak" />
+  <project path="device/statix/sepolicy" name="android_device_statix_sepolicy" remote="statix-staging" revision="cb" />
 
   <!-- External -->
   <project path="external/gptfdisk" name="android_external_gptfdisk" remote="statix-staging" />
