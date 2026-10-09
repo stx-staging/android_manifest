@@ -63,7 +63,7 @@
   <project path="frameworks/native" name="android_frameworks_native" remote="statix-staging" />
 
   <!-- Google Mobile Services -->
-  <project path="vendor/gms" name="StatiXOS/google-mobile-services" remote="gitea" revision="cp2a" clone-depth="1" />
+  <project path="vendor/gms" name="ralph950412/google-mobile-services" remote="gitlab" revision="cp2a-lfs" clone-depth="1" />
 
   <!-- Hardware -->
   <project path="hardware/google/pixel" name="android_hardware_google_pixel" remote="statix-staging" />
